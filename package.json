@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "beauty": "lint-staged",
+          "beauty": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resource/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "vietbao",
+  "license": "ISC",
   "lint-staged": {
     "src/**/*.{mjs, js, json, hbs}": "prettier --write --single-quote --trailing-comma all --tab-width 4"
   },
@@ -19,7 +24,6 @@
     }
   },
   "dependencies": {
-    "bootstrap": "^5.3.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "mysql2": "^2.3.3",
@@ -27,7 +31,10 @@
   },
   "devDependencies": {
     "husky": "^8.0.3",
-    "nodemon": "3.0.1",
+    "lint-staged": "^14.0.1",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
     "prettier": "^3.0.2"
   }
 }
